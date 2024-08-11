@@ -5,22 +5,12 @@ import { useForm } from 'react-hook-form';
 import { z } from 'zod';
 
 import { Form } from '@/components/ui/form';
-import CustomFormField from './CustomFormField';
-import SubmitButton from './SubmitButton';
+import CustomFormField, { FormFieldType } from '../CustomFormField';
+import SubmitButton from '../SubmitButton';
 import { useState } from 'react';
 import { UserFormValidation } from '@/lib/validation';
 import { useRouter } from 'next/navigation';
 import { createUser } from '@/lib/actions/patient.actions';
-
-export enum FormFieldType {
-  INPUT = 'input',
-  TEXTAREA = 'textarea',
-  PHONE_INPUT = 'phone_input',
-  CHECKBOX = 'checkbox',
-  DATE_PICKER = 'datePicker',
-  SELECT = 'select',
-  SKELETON = 'skeleton',
-}
 
 export default function PatientForm() {
   const router = useRouter();
@@ -69,6 +59,7 @@ export default function PatientForm() {
           <h1 className="header">Hi There👋</h1>
           <p className="text-dark-700">Schedule your first appointment</p>
         </section>
+
         <CustomFormField
           fieldType={FormFieldType.INPUT}
           control={form.control}
