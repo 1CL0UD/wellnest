@@ -73,7 +73,7 @@ export default function AppointmentForm({
         if (appointment) {
           form.reset();
           router.push(
-            `/patients/${userId}/new-appointment/success?=appointmentId=${appointment.$id}`
+            `/patients/${userId}/new-appointment/success?appointmentId=${appointment.$id}`
           );
         }
       }
