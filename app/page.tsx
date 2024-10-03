@@ -21,7 +21,7 @@ export default function Home({ searchParams }: SearchParamProps) {
         <PatientForm />
         <div className="flex justify-between text-14-regular mt-20">
           <p className="justify-items-end text-dark-600 xl:text-left">
-            © 2024 CarePulse
+            © 2024 Wellnest
           </p>
           <Link href={'?admin=true'} className="text-green-500">
             Admin
