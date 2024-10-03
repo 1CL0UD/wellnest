@@ -12,7 +12,7 @@ const Register = async ({ params: { userId } }: SearchParamProps) => {
       <section className="remove-scrollbar container py-12 min-h-full">
         <div className="max-w-lg mb-8">
           <Image
-            src={'/assets/icons/logo-full.svg'}
+            src={'/assets/icons/Wellnest-icon.png'}
             width={100}
             height={100}
             alt={'Logo'}
